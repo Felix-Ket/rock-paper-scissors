@@ -1,0 +1,216 @@
+
+/* Universal styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+button {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+
+/* Title & round number */
+
+.game-title {
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.round-title {
+    font-weight: normal;
+}
+
+
+/* Game section */
+
+.game-section {
+    margin: 3rem auto auto auto;
+    display: flex;
+    justify-content: center;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20rem;
+    height: 30rem;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 2rem;
+}
+
+/* Choice cards */
+.choice-field {
+    font-size: 4rem;
+    width: 100%;
+    height: 22rem;
+    border: 1px solid black;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+
+/* Computer card */
+
+.computer-card.game-card {
+    background-color: rgba(245, 103, 103, 0.377);
+}
+
+.card-info {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.computer-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-mark-image {
+    background-image: url(../images/question-mark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 15rem;
+    width: 70%;
+    overflow: hidden;
+}
+
+/* Human card */
+
+.human-card.game-card {
+    background-color: rgba(154, 233, 177, 0.377);
+}
+
+.human-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.human-choice button {
+    padding: 0.5rem;
+    width: 50%;
+    background-color: lightblue;
+}
+
+.human-choice button:focus {
+    background-color: lightgreen;
+}
+
+.human-choice button img {
+    width: 4rem;
+    height: auto;
+}
+
+
+/* Winner section */
+
+.winner-section {
+    margin-bottom: 2rem;
+}
+
+#winner-text {
+    color: red;
+}
+
+
+/* Next round button */
+
+.next-round-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+}
+
+#next-round-button {
+    width: 15%;
+    background-color: lightblue;
+}
+
+
+/* Instructions */
+
+.info-section {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightgray;
+}
+
+.info-card {
+    width: 11rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.info-card h4 {
+    font-weight: bold;
+}
+
+
+/* Dynamic elements */
+
+button[disabled] {
+    background-color: #d2d2d2 !important;
+    color: #a0a0a0;
+    cursor: default;
+}
+
+.rock-image {
+    background-image: url(../images/rock.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 15rem;
+    width: 70%;
+    overflow: hidden;
+}
+
+.paper-image {
+    background-image: url(../images/paper.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 15rem;
+    width: 70%;
+    overflow: hidden;
+}
+
+.scissors-image {
+    background-image: url(../images/scissor.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 15rem;
+    width: 70%;
+    overflow: hidden;
+}
